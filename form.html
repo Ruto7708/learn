@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cyan; /* Updated background to match previous styles */
+            margin: 0;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for navbar */
+            padding: 15px;
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            display: flex;
+            justify-content: space-around; /* Space items evenly */
+            margin-bottom: 20px; /* Space between navbar and content */
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold; /* Make links bold */
+            padding: 10px 15px; /* Add padding around links */
+            transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+        }
+
+        a:hover {
+            color: blue;
+            background-color: rgba(255, 0, 0, 0.2); /* Light red background on hover */
+            border-radius: 3px; /* Rounded hover effect */
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 15px; /* Border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px; /* Increased max width */
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #66afe9;
+            outline: none;
+            box-shadow: 0 0 5px rgba(102, 175, 233, .5);
+        }
+
+        input[type="submit"],
+        button {
+            background-color: #2b5123;
+            color: white;
+            padding: 8px 12px; /* Reduced padding */
+            border: none;
+            border-radius: 5px;
+            font-size: 14px; /* Reduced font size */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: auto; /* Auto width to fit content */
+            margin-right: 10px; /* Add spacing between buttons */
+        }
+
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #1e3d18;
+        }
+
+        textarea {
+            resize: vertical; /* Allow vertical resizing only */
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="Home.html">Home</a>
+    <a href="images.html">Images</a>
+    <a href="form.html">Form</a> <!-- Link to the form page -->
+</nav>
+
+<form action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Name" required>
+
+    <label for="number">Number:</label>
+    <input type="number" id="number" placeholder="Enter Number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <label for="cv">Upload CV:</label>
+    <input type="file" id="cv">
+
+    <label for="gender">Gender:</label>
+    <select id="gender">
+        <option value="" selected>Select a value</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" cols="30" rows="5" placeholder="Your message..."></textarea>
+
+    <input type="submit" value="Send Message">
+    <button type="button">Cancel</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            text-align: left;
+             
+        }
+        .r1{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px; /* Rounded top right corner */
+
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:first-child td {
+            border-top: none; /* Remove top border from the first row */
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr class="r1">
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Team</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td>95</td>
+            <td>Team A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bob</td>
+            <td>88</td>
+            <td>Team B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Charlie</td>
+            <td>76</td>
+            <td>Team C</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>David</td>
+            <td>65</td>
+            <td>Team D</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
